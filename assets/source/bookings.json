@@ -1,0 +1,72 @@
+[
+  {
+    "guest_name": "Ahmad Faizal",
+    "room_number": 101,
+    "check_in": "2025-06-01",
+    "check_out": "2025-06-05",
+    "status": "Confirmed"
+  },
+  {
+    "guest_name": "Siti Nurhaliza",
+    "room_number": 102,
+    "check_in": "2025-06-03",
+    "check_out": "2025-06-06",
+    "status": "Pending"
+  },
+  {
+    "guest_name": "John Smith",
+    "room_number": 103,
+    "check_in": "2025-06-02",
+    "check_out": "2025-06-04",
+    "status": "Cancelled"
+  },
+  {
+    "guest_name": "Aisyah Zainal",
+    "room_number": 104,
+    "check_in": "2025-06-05",
+    "check_out": "2025-06-10",
+    "status": "Confirmed"
+  },
+  {
+    "guest_name": "Daniel Lee",
+    "room_number": 105,
+    "check_in": "2025-06-06",
+    "check_out": "2025-06-08",
+    "status": "Confirmed"
+  },
+  {
+    "guest_name": "Maria Gonzales",
+    "room_number": 106,
+    "check_in": "2025-06-04",
+    "check_out": "2025-06-07",
+    "status": "Pending"
+  },
+  {
+    "guest_name": "Ali Rahman",
+    "room_number": 107,
+    "check_in": "2025-06-07",
+    "check_out": "2025-06-09",
+    "status": "Confirmed"
+  },
+  {
+    "guest_name": "Nurul Izzah",
+    "room_number": 108,
+    "check_in": "2025-06-01",
+    "check_out": "2025-06-03",
+    "status": "Cancelled"
+  },
+  {
+    "guest_name": "Michael Tan",
+    "room_number": 109,
+    "check_in": "2025-06-08",
+    "check_out": "2025-06-12",
+    "status": "Confirmed"
+  },
+  {
+    "guest_name": "Hana Abdullah",
+    "room_number": 110,
+    "check_in": "2025-06-09",
+    "check_out": "2025-06-11",
+    "status": "Pending"
+  }
+]
