@@ -31,7 +31,7 @@ void main() async {
   await initiateDatabase();
 
   await AppConfig(
-    appName: "Fourtitude Assessment",
+    appName: "Neo Ai Assessment",
     environment: AppEnvironment.developemnt
   ).run();
 }

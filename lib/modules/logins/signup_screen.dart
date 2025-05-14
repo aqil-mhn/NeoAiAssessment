@@ -89,7 +89,7 @@ class _SignupScreenState extends State<SignupScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
-                "assets/images/recipe.png",
+                "assets/images/hotel.png",
                 width: 200,
                 height: 200,
               ),

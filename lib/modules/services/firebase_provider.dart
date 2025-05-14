@@ -15,4 +15,14 @@ class FirebaseProvider extends ChangeNotifier {
 
     notifyListeners();
   }
+
+  changeName(String name) async {
+    try {
+      await currentUser?.updateDisplayName(name);
+      _userName = name;
+      notifyListeners();
+    } catch (e) {
+      throw Exception('Failed to update name: $e');
+    }
+  }
 }

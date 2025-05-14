@@ -7,42 +7,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:90543510729:android:055dde3d4b2e7440a76918",
-        "android_client_info": {
-          "package_name": "com.example.fourtitude_assessment"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "90543510729-2ou7a89921eudcgf2d3kpg2sca1o1i1g.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCQDqHSCa4dtM1EGsx0EWkj_5MzJwC4xrc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "90543510729-2ou7a89921eudcgf2d3kpg2sca1o1i1g.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "90543510729-l5jmf0jbghgp6el7tr2n9vqcf37csc4g.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.fourtitudeAssessment"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:90543510729:android:1593910cc6341f62a76918",
         "android_client_info": {
           "package_name": "com.example.neoai_assessment"

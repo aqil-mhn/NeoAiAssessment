@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:neoai_assessment/configs/app_theme.dart';
+import 'package:neoai_assessment/configs/context_extensions.dart';
 import 'package:neoai_assessment/modules/home_screen.dart';
 import 'package:neoai_assessment/modules/logins/signup_screen.dart';
 import 'package:neoai_assessment/modules/services/firebase_auth_services.dart';
@@ -98,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
-                "assets/images/recipe.png",
+                "assets/images/hotel.png",
                 width: 200,
                 height: 200,
               ),
@@ -194,6 +195,53 @@ class _LoginScreenState extends State<LoginScreen> {
                     )
                   ]
                 ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Divider(),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    iconSize: 24,
+                    constraints: BoxConstraints(
+                      minWidth: 32,
+                      minHeight: 32
+                    ),
+                    onPressed: () {
+                      context.showOverlaySnackBar(context, "Under Developement");
+                    },
+                    icon: Image.asset(
+                      "assets/images/google.png",
+                      fit: BoxFit.contain,
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  IconButton(
+                    iconSize: 10,
+                    constraints: BoxConstraints(
+                      minWidth: 32,
+                      minHeight: 32
+                    ),
+                    onPressed: () {
+                      context.showOverlaySnackBar(context, "Under Developement");
+                    },
+                    icon: Image.asset(
+                      "assets/images/apple.png",
+                      fit: BoxFit.contain,
+                      width: 24,
+                      height: 24,
+                    ),
+                  ),
+                ],
               ),
               SizedBox(
                 height: 30,

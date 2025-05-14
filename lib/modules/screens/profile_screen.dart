@@ -18,15 +18,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   void initState() {
     super.initState();
-    _nameController.text = currentUser?.displayName ?? 'User';
+    _nameController.text = context.firebaseProvider.userName ?? 'User';
   }
 
   Future<void> _updateDisplayName() async {
+    if (_nameController.text.trim().isEmpty) return;
     try {
-      await currentUser?.updateDisplayName(_nameController.text);
+      await context.firebaseProvider.changeName(_nameController.text.trim());
+
       setState(() {
         isEditing = false;
       });
+
       ScaffoldMessenger.of(context).hideCurrentSnackBar();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -122,23 +125,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         ],
                       )
                     else
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            context.firebaseProvider.userName ?? 'User',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          IconButton(
-                            icon: Icon(Icons.edit, color: Colors.white),
-                            onPressed: () => setState(() => isEditing = true),
-                          ),
-                        ],
-                      ),
+                      ListenableBuilder(
+                        listenable: context.firebaseProvider,
+                        builder: (context, child) {
+                          return Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  context.firebaseProvider.userName ?? 'User',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 24,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.edit, color: Colors.white),
+                                onPressed: () => setState(() => isEditing = true),
+                              ),
+                            ],
+                          );
+                        },
+                      )
                   ],
                 ),
               ),
